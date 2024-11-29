@@ -67,10 +67,49 @@
         <input type="submit" value="Google Image Search" name="q" class="btn btn-info btn-lg btn-block mt-3"
             placeholder="Search Google Images" required>
         <!-- <button type="submit">Google Image Search</button> -->
-        <h3 class="text-center">Google Advanced Search</h3>
+        <!-- <h3 class="text-center">Google Advanced Search</h3>
         <input type="text" name="as_q" class="form-control form-control-lg">
         <input type="submit" id="allwords" name="as_q" value="Google Advanced search"
-            class="btn btn-primary btn-lg btn-block mt-3" placeholder="Enter words..." required>
+            class="btn btn-primary btn-lg btn-block mt-3" placeholder="Enter words..." required> -->
+            <div class="container mt-5">
+                <h1 class="text-center">Google Advanced Search</h1>
+                
+                <form action="https://www.google.com/search" method="get">
+                  <!-- Find Pages With All These Words -->
+                  <div class="form-group">
+                    <label for="allWords">Find pages with all these words:</label>
+                    <input type="text" class="form-control" name="q" id="allWords" placeholder="Enter words..." required>
+                  </div>
+                  
+                  <!-- Find Pages With This Exact Word or Phrase -->
+                  <div class="form-group">
+                    <label for="exactPhrase">Find pages with this exact word or phrase:</label>
+                    <input type="text" class="form-control" name="as_q" id="exactPhrase" placeholder="Enter phrase..." required>
+                  </div>
+            
+                  <!-- Find Pages With Any of These Words -->
+                  <div class="form-group">
+                    <label for="anyWords">Find pages with any of these words:</label>
+                    <input type="text" class="form-control" name="as_epq" id="anyWords" placeholder="Enter words..." required>
+                  </div>
+                  
+                  <!-- Find Pages With None of These Words -->
+                  <div class="form-group">
+                    <label for="noneWords">Find pages with none of these words:</label>
+                    <input type="text" class="form-control" name="as_eq" id="noneWords" placeholder="Enter words..." required>
+                  </div>
+            
+                  <!-- Advanced Search Button -->
+                  <div class="form-group text-center">
+                    <input type="submit" class="btn btn-primary btn-lg" value="Advanced Search">
+                  </div>
+                </form>
+            
+                <!-- Link back to Google Search -->
+                <div class="text-center mt-3">
+                  <a href="index.html" class="btn btn-link">Back to Google Search</a>
+                </div>
+              </div>
     </form>
 </body>
 
