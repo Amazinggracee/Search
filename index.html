@@ -1,108 +1,26 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Search</title>
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background-color: #f2f2f2;
-            font-family: Arial, sans-serif;
-        }
-
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            color: #555;
-            margin-bottom: 10px;
-        }
-
-        input[type="text"] {
-            border-radius: 25px;
-            padding: 15px;
-            margin-bottom: 10px;
-            border: 1px solid #ccc;
-            font-size: 1.1rem;
-            width: 100%;
-        }
-
-        input[type="submit"] {
-            border-radius: 25px;
-            padding: 15px;
-            font-size: 1.1rem;
-            background-color: #4285F4;
-            color: white;
-            border: none;
-            width: 100%;
-            cursor: pointer;
-            margin-top: 10px;
-        }
-
-        .mt-5 {
-            margin-top: 30px;
-        }
-    </style>
-</head>
-
-<body>
-    <h1 class="text-center">Google Search Assignment</h1>
-    <form action="https://www.google.com/search" class="container mt-5">
-        <h3 class="text-center">Google Search</h3>
-        <input type="text" name="q" class="form-control form-control-lg">
-        <input type="submit" value="Google Search" placeholder="How can i help you?"
-            class="btn btn-primary btn-lg btn-block mt-3">
-        <h3 class="text-center">Google image Search</h3>
-        <input type="text" name="q" class="form-control form-control-lg">
-        <input type="submit" value="Google Image Search" name="q" class="btn btn-info btn-lg btn-block mt-3"
-            placeholder="Search Google Images" required>
-      
-        <h3 class="text-center">Google Advanced Search</h3>
-        <input type="text" name="as_q" class="form-control form-control-lg">
-        <input type="submit" id="allwords" name="as_q" value="Google Advanced search"
-            class="btn btn-primary btn-lg btn-block mt-3" placeholder="Enter words..." required>
-    </form>
-</body>
-
-</html> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Google Search</title>
-  
-  <!-- Link to Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Link to custom CSS -->
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container mt-5">
     <h1 class="text-center">Google Search</h1>
     
-    <form action="https://www.google.com/search" method="get">
+    <form action="https://www.google.com/search">
       <div class="form-group text-center">
         <input type="text" name="q" class="form-control form-control-lg" placeholder="Search Google" required>
         <button type="submit" class="btn btn-primary btn-lg mt-3">Google Search</button>
       </div>
       
-      <!-- I’m Feeling Lucky Button -->
       <div class="form-group text-center mt-3">
         <a href="https://www.google.com/search?btnI=I&q=" class="btn btn-warning btn-lg">I'm Feeling Lucky</a>
       </div>
       
-      <!-- Links to Image Search and Advanced Search -->
       <div class="text-center mt-4">
         <a href="image_search.html" class="btn btn-info btn-lg">Google Image Search</a>
         <a href="advanced_search.html" class="btn btn-success btn-lg">Google Advanced Search</a>
